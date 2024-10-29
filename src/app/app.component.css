@@ -1,99 +1,157 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
-    margin: 0;
-    padding: 0;
-  }
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
 
-  .container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: white;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  }
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
 
+h1 {
+  color: #333;
+  text-align: center;
+  font-size: 46px;
+}
+
+h2 {
+  color: #333;
+  text-align: center;
+  font-size: 33px;
+}
+
+h3 {
+  color: #666;
+  text-align: center;
+  background-color: #EBEBEB;
+  margin: 10px;
+  padding: 5px;
+  font-size: 23px;
+}
+
+h4 {
+  margin: 0px;
+  padding: 0;
+  line-height: 1;
+  font-size: 18px;
+}
+
+.background-section {
+  padding: 15px;
+  background-color: #9b9494;
+}
+
+p {
+  color: #555;
+  margin: 5px 0;
+}
+
+#headercontainer ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  /* Ensures items wrap to next line */
+  justify-content: center;
+}
+
+#headercontainer ul li {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 16px;
+  word-wrap: break-word;
+  /* Prevents long words from overflowing */
+  overflow-wrap: break-word;
+  /* Ensures long text breaks on small screens */
+  max-width: 100%;
+  /* Ensures it doesn't overflow container */
+  white-space: normal;
+  /* Allows text to wrap to next line */
+}
+
+
+a:link,
+a:visited {
+  color: #0000EE;
+  /* Default hyperlink color */
+  text-decoration: none;
+}
+
+a:hover,
+a:active {
+  color: #551A8B;
+  /* Color when hovered or active */
+  text-decoration: underline;
+}
+
+/* table {
+    border-collapse: collapse;
+    width: 100%;
+  } */
+
+th,
+td {
+  padding: 8px;
+  text-align: left;
+  vertical-align: top;
+}
+
+th:first-child {
+  width: 25%;
+}
+
+th {
+  font-weight: normal;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#downloadButton {
+  height: 30px;
+}
+
+/* Mobile specific styles */
+@media (max-width: 768px) {
   h1 {
-    color: #333;
-    text-align: center;
-    font-size: 46px;
+    font-size: 36px;
   }
 
   h2 {
-    color: #333;
-    text-align: center;
-    font-size: 33px;
+    font-size: 28px;
   }
 
   h3 {
-    color: #666;
-    text-align: center;
-    background-color: #EBEBEB;
-    margin: 10px;
-    padding: 5px;
-    font-size: 23px;
+    font-size: 20px;
   }
 
   h4 {
-    margin: 0px;
-    padding: 0;
-    line-height: 1;
-    font-size: 18px;
-  }
-
-  .background-section {
-    padding: 15px;
-    background-color: #9b9494;
-  }
-
-  p {
-    color: #555;
-    margin: 5px 0;
-  }
-
-  #headercontainer ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    text-align: center;
+    font-size: 16px;
   }
 
   #headercontainer ul li {
-    display: inline;
-    margin-right: 10px;
-  }
-
-  a:link, a:visited {
-    color: #0000EE; /* Default hyperlink color */
-    text-decoration: none;
-  }
-
-  a:hover, a:active {
-    color: #551A8B; /* Color when hovered or active */
-    text-decoration: underline;
-  }
-
-  table {
-    border-collapse: collapse;
-    width: 100%;
-  }
-
-  th, td {
-    padding: 8px;
+    font-size: 14px;
     text-align: left;
-    vertical-align: top;
-  }
-
-  th:first-child {
-    width: 25%;
-  }
-
-  th {
-    font-weight: normal;
+    max-width: 100%;
+    /* Ensure no overflow on mobile */
+    margin-bottom: 10px;
   }
 
   .button-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
   }
+
+  button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
