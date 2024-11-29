@@ -27,6 +27,7 @@
             "styles": [
               "@angular/material/prebuilt-themes/azure-blue.css",
               "src/assets/css/scheduling-button-script.css",
+              "node_modules/@fortawesome/fontawesome-free/css/all.min.css",
               "src/styles.css"
             ],
             "scripts": ["src/assets/js/scheduling-button-script.js"]
@@ -94,5 +95,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "760b1a51-6d03-4c05-884c-18ef357416cc"
   }
 }
